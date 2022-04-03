@@ -1,0 +1,48 @@
+{
+  "name": "rekruter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "serveProduction": "nodemon index.js",
+    "serve": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "concurrently \"npm run serve\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pdftron/pdfnet-node": "^9.1.0-2",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.14.0",
+    "express-winston": "^4.2.0",
+    "html-pdf": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "node-fetch": "2.0",
+    "nodemailer": "^6.7.2",
+    "pdf-image": "^2.0.0",
+    "pdf2img": "^0.5.0",
+    "pdf2pic": "^2.1.4",
+    "pdfmake": "^0.2.4",
+    "puppeteer": "^13.0.1",
+    "randomstring": "^1.2.2",
+    "sequelize": "^6.12.0-beta.3",
+    "telegraf": "^4.7.0",
+    "winston": "^3.6.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.15"
+  }
+}
